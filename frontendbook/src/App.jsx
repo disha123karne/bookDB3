@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api/books";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://book-backend11.onrender.com/api/books";
 
 
 import { useEffect, useState } from "react";
@@ -6,7 +6,7 @@ import axios from "axios";
 import "./App.css";
 
 function App() {
-  const API = "http://localhost:3000/api/books";
+  const API = "https://book-backend11.onrender.com/api/books";
 
   const [books, setBooks] = useState([]);
   const [form, setForm] = useState({
